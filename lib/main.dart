@@ -7,7 +7,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   if (kIsWeb) {
-    // Web: provide explicit FirebaseOptions
+
     await Firebase.initializeApp(
       options: FirebaseOptions(
         apiKey: "AIzaSyDqdeqRAk94DV-_687H2spwQmI-W1nDjrE",
@@ -19,7 +19,7 @@ void main() async {
       ),
     );
   } else {
-    // Mobile: will read from google-services.json
+ 
     await Firebase.initializeApp();
   }
 
